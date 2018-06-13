@@ -1,0 +1,7 @@
+Config.*
+sounds/
+Include/
+Lib/
+Scripts/
+tcl/
+pip-selfcheck.json
