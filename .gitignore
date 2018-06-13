@@ -1,5 +1,5 @@
 Config.*
-sounds/
+sounds/*
 Include/
 Lib/
 Scripts/
