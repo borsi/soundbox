@@ -1,4 +1,4 @@
-Config.*
+config.inc
 sounds/*
 Include/
 Lib/
