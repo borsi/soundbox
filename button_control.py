@@ -20,16 +20,8 @@ def play_sound(channel):
     print('Button Pressed')
     time.sleep(0.2)
 
-GPIO.add_event_detect(18, GPIO.RISING, callback=play_sound, bouncetime=300)  
+GPIO.add_event_detect(18, GPIO.FALLING, callback=play_sound, bouncetime=300)  
 
-try:
-    while True:
-        GPIO.wait_for_edge(18, GPIO.RISING)  
-        
-
-except KeyboardInterrupt:  
-
-    GPIO.cleanup()    
 GPIO.cleanup()
 #while True:
 #    input_state = GPIO.input(18)
