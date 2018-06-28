@@ -30,7 +30,7 @@ while True:
         print(onlyfiles)
         index = random.randint(0, len(onlyfiles)-1)
         selected = onlyfiles[index]
-        winsound.PlaySound(mypath+'/'+selected, winsound.SND_FILENAME)
+        winsound.PlaySound(mypath+'/'+selected, winsound.SND_FILENAME   )
     if(data == 'close'):
         conn.close()
         break
