@@ -27,7 +27,7 @@ try:
         GPIO.wait_for_edge(18, GPIO.RISING)  
         
 
-except: KeyboardInterrupt():
+except: KeyboardInterrupt:
     GPIO.cleanup()    
 GPIO.cleanup()
 #while True:
