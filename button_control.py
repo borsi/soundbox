@@ -22,6 +22,14 @@ def play_sound(channel):
 
 GPIO.add_event_detect(18, GPIO.FALLING, callback=play_sound, bouncetime=300)  
 
+try:
+    while True:
+        GPIO.wait_for_edge(18, GPIO.RISING)  
+        
+
+except: KeyboardInterrupt():
+    GPIO.cleanup()    
+GPIO.cleanup()
 #while True:
 #    input_state = GPIO.input(18)
 #    if input_state == False:
